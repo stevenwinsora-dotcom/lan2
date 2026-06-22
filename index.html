@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caribe Energía | Tutorial: Dirección del Viento para Supervivencia</title>
+    <meta name="description" content="Aprende la técnica vital de supervivencia para identificar la dirección del viento en el Caribe usando solo tu dedo. Tutorial paso a paso, gratuito y fundamental.">
+    <meta name="keywords" content="supervivencia caribe, dirección del viento, orientación sin brújula, técnicas de supervivencia, caribe energía">
+    <meta name="author" content="JERSON STWAR CALDON GARCIA">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+   
+    <style>
+    
+        :root {
+            --primary-color: #0284c7; /* Azul mar */
+            --secondary-color: #0369a1;
+            --accent-color: #f59e0b; /* Naranja sol */
+            --text-dark: #1e293b;
+            --text-light: #f8fafc;
+            --bg-light: #f0f9ff;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: var(--text-dark); background-color: #ffffff; }
+        a { text-decoration: none; color: inherit; }
+        
+        /* Header & Nav */
+        header { background-color: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary-color); }
+        nav ul { list-style: none; display: flex; gap: 1.5rem; }
+        nav a { font-weight: 500; transition: color 0.3s; }
+        nav a:hover { color: var(--primary-color); }
+        
+        /* Buttons */
+        .btn { display: inline-block; background-color: var(--accent-color); color: var(--text-dark); font-weight: 700; padding: 0.8rem 1.5rem; border-radius: 4px; border: none; cursor: pointer; transition: background-color 0.3s, transform 0.2s; text-align: center; }
+        .btn:hover { background-color: #d97706; transform: translateY(-2px); }
+        .btn-primary { background-color: var(--primary-color); color: var(--text-light); }
+        .btn-primary:hover { background-color: var(--secondary-color); }
+
+        /* Sections */
+        section { padding: 4rem 5%; }
+        .section-title { text-align: center; font-size: 2rem; margin-bottom: 2rem; color: var(--primary-color); }
+        
+        /* Hero */
+        .hero { background: linear-gradient(rgba(2, 132, 199, 0.8), rgba(2, 132, 199, 0.8)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect width="100" height="100" fill="%230284c7"/></svg>') center/cover; color: var(--text-light); text-align: center; padding: 6rem 5%; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem; }
+
+        /* Beneficios & Propuesta */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .card { background-color: var(--bg-light); padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; }
+        .card h3 { color: var(--secondary-color); margin-bottom: 1rem; }
+
+        /* Transparencia / Empresa */
+        .info-empresa { background-color: #f1f5f9; padding: 2rem; border-radius: 8px; font-size: 0.95rem; }
+
+        /* Formulario */
+        .contact-form { max-width: 600px; margin: 0 auto; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 500; }
+        .form-group input, .form-group textarea { width: 100%; padding: 0.8rem; border: 1px solid #cbd5e1; border-radius: 4px; font-family: inherit; }
+        .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--primary-color); box-shadow: 0 0 0 2px rgba(2, 132, 199, 0.2); }
+
+        /* Footer */
+        footer { background-color: var(--text-dark); color: #94a3b8; text-align: center; padding: 2rem 5%; font-size: 0.9rem; }
+        footer .legal-links { margin-bottom: 1rem; }
+        footer .legal-links a { color: #cbd5e1; margin: 0 10px; text-decoration: underline; }
+        footer .legal-links a:hover { color: white; }
+
+        @media (max-width: 768px) {
+            nav ul { display: none; /* Simplificación para móvil */ }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+<div id="preloader">
+    <div class="spinner"></div>
+</div>
+    <header>
+        <div class="logo">Caribe Energía</div>
+        <nav>
+            <ul>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#tutorial">El Tutorial</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="#contacto" class="btn">Acceder al Tutorial</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Sobrevive en el Caribe: Lee el Viento con un Dedo</h1>
+            <p>Descubre la técnica de orientación y supervivencia más antigua y confiable. Aprende a determinar la dirección del viento sin equipo, esencial para navegantes y aventureros en la costa.</p>
+            <a href="#contacto" class="btn btn-primary" style="background-color: var(--accent-color); color: var(--text-dark);">Solicita el Tutorial de Supervivencia Gratis</a>
+        </section>
+
+        <section id="beneficios">
+            <h2 class="section-title">¿Por qué es vital esta técnica?</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Cero Equipamiento</h3>
+                    <p>No dependas de baterías, brújulas magnéticas ni señal GPS. Tu cuerpo y el entorno son tus únicas herramientas de navegación.</p>
+                </div>
+                <div class="card">
+                    <h3>Precisión Sensorial</h3>
+                    <p>Entiende cómo la humedad y la temperatura en la piel humana interactúan con los vientos alisios del Mar Caribe para darte orientación exacta.</p>
+                </div>
+                <div class="card">
+                    <h3>Conocimiento Ancestral</h3>
+                    <p>Técnica utilizada por pescadores y navegantes históricos, ahora sistematizada en un tutorial claro y fácil de entender para cualquier persona.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tutorial" style="background-color: var(--bg-light);">
+            <div class="grid" style="align-items: center;">
+                <div>
+                    <h2 style="color: var(--primary-color); margin-bottom: 1rem; font-size: 2rem;">Contenido del Tutorial Educativo</h2>
+                    <p style="margin-bottom: 1rem;">Nuestra guía <strong>"Caribe Energía: Orientación Sensorial"</strong> es un documento educativo diseñado para enseñarte:</p>
+                    <ul style="list-style-position: inside; margin-bottom: 2rem;">
+                        <li>La ciencia detrás del enfriamiento por evaporación en la piel.</li>
+                        <li>Cómo humedecer correctamente el dedo para maximizar la sensibilidad.</li>
+                        <li>Interpretación de los vientos alisios predominantes en la región del Caribe.</li>
+                        <li>Errores comunes y cómo corregirlos en situaciones de estrés.</li>
+                    </ul>
+                    <div style="border-left: 4px solid var(--accent-color); padding-left: 1rem; font-style: italic; color: #475569;">
+                        "La educación en técnicas de supervivencia básicas es fundamental para cualquier persona que explore entornos costeros o marítimos. Este material se proporciona con fines estrictamente informativos y de preparación."
+                    </div>
+                </div>
+                <div class="info-empresa">
+                    <h3>Transparencia y Responsabilidad</h3>
+                    <p style="margin-top: 0.5rem;">Este portal está administrado de forma independiente. Nuestro objetivo es la divulgación de conocimientos de supervivencia y orientación en la naturaleza.</p>
+                    <hr style="margin: 1rem 0; border: 0; border-top: 1px solid #cbd5e1;">
+                    <p><strong>Responsable:</strong> JERSON STWAR CALDON GARCIA</p>
+                    <p><strong>Horario de atención:</strong> Todos los días de 8:00am a 5:00pm</p>
+                    <p><strong>Ubicación:</strong> Norte de Santander, Colombia</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2 class="section-title">Solicita tu Material Educativo</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">Completa el formulario para enviarte el enlace de acceso al tutorial gratuito directamente a tu correo electrónico.</p>
+            
+            <div class="contact-form">
+                <form id="leadForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="motivo">¿Por qué te interesa la supervivencia? (Opcional)</label>
+                        <textarea id="motivo" name="motivo" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Solicitud de Tutorial</button>
+                    <p id="formStatus" style="display:none; text-align:center; margin-top:1rem; font-weight:bold; color: var(--primary-color);"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="legal-links">
+            <a href="politica-de-privacidad.html">Política de Privacidad</a>
+            <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
+        </div>
+        <div style="margin-bottom: 1rem;">
+            <p><strong>Caribe Energía</strong> - Portal Educativo de Supervivencia</p>
+            <p>Dirección: Cl 19 #15-54, Cúcuta, Norte de Santander, 540006, Colombia</p>
+            <p>Teléfono: 3012556523 | Email: laluprasadkaruppsamy@gmail.com</p>
+        </div>
+        <div>
+            &copy; <span id="year"></span> Operado por JERSON STWAR CALDON GARCIA. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Smooth Scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Basic Form Handling (No redirects, UX friendly)
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = this.querySelector('button');
+            const status = document.getElementById('formStatus');
+            
+            btn.disabled = true;
+            btn.textContent = 'Procesando...';
+            
+            // Simulate API call for demonstration
+            setTimeout(() => {
+                this.reset();
+                btn.disabled = false;
+                btn.textContent = 'Enviar Solicitud de Tutorial';
+                status.textContent = '¡Solicitud recibida! Te contactaremos pronto al correo indicado.';
+                status.style.display = 'block';
+                status.style.color = '#16a34a'; // Success green
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
